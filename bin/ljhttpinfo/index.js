@@ -39,6 +39,14 @@ var ljHttpInfo = {
   download: function download(files, callback) {
     (0, _index.callNative)('HttpInfo', 'download', files, callback);
   },
+  downloadvideo: function downloadvideo(url, localfile, param, callback) {
+    var params = {
+      url: url,
+      localfile: localfile,
+      param: param
+    };
+    (0, _index.callNative)('HttpInfo', 'downloadvideo', params, callback);
+  },
   getResourceUrl: function getResourceUrl(resname, callback) {
     var params = {
       resname: resname

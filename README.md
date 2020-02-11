@@ -773,6 +773,23 @@ class TestComponent extends React.Component {
                         }
                 ]      
 
+#### downloadvideo:function(url,localfile,param,callback)
+        从服务器下载m3u8视频
+        url:
+            m3u8视频地址
+        localfile:
+            保存本地文件名
+        param：
+            {
+                workpath:string,            //工作路径，不传采用localfile所在路径
+                resname:string,             //如果不为null，则自动根据资源名称获取m3u8地址，此时url可为null
+            }
+        函数在下载过程中会不停的调用callback已通知当前的下载状态
+        返回：
+                code:int,		//返回 =0 开始下载  =1 正在下载  =2 下载成功   <0 失败
+                percent:int,		//上传百分比  0-100
+                msg:string,		//提示消息
+
 #### getResourceUrl(resname,callback)     
         得到指定资源名对应的外网url地址
         返回：

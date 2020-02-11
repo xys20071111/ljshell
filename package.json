@@ -1,27 +1,34 @@
 {
-  "name": "ljshell",
-  "version": "1.1.5",
+  "_from": "ljshell@^1.1.5",
+  "_id": "ljshell@1.1.7",
+  "_inBundle": false,
+  "_integrity": "sha1-g1J/oeT7HnP2WUb3gO3CbiAwyGE=",
+  "_location": "/ljshell",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "ljshell@^1.1.5",
+    "name": "ljshell",
+    "escapedName": "ljshell",
+    "rawSpec": "^1.1.5",
+    "saveSpec": null,
+    "fetchSpec": "^1.1.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npm.taobao.org/ljshell/download/ljshell-1.1.7.tgz",
+  "_shasum": "83527fa1e4fb1e73f65946f780edc26e2030c861",
+  "_spec": "ljshell@^1.1.5",
+  "_where": "/root/workspace",
+  "author": {
+    "name": "xfun.com@hotmail.com"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "北京乐教乐学调用原生JS类库",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --profile --progress",
-    "compile": "babel src/npmindex.js -o index.js | babel components -d bin",
-    "prepublishOnly": "npm run compile"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://192.168.2.4:8080/tfs/ljshell/_git/ljshelljs"
-  },
-  "keywords": [
-    "ljshell"
-  ],
-  "files": [
-    "index.js",
-    "bin/"
-  ],
-  "author": "xfun.com@hotmail.com",
-  "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -29,12 +36,33 @@
     "babel-plugin-import": "^1.11.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "rimraf": "^2.6.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-react": "^6.24.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "bin/"
+  ],
+  "keywords": [
+    "ljshell"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "ljshell",
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.2.4:8080/tfs/ljshell/_git/ljshelljs"
+  },
+  "scripts": {
+    "build": "webpack --profile --progress",
+    "compile": "babel src/npmindex.js -o index.js | babel components -d bin",
+    "prepublishOnly": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.7"
 }
