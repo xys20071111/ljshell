@@ -1,27 +1,27 @@
 {
-  "_from": "ljshell@^1.1.5",
-  "_id": "ljshell@1.1.7",
+  "_from": "ljshell@^1.1.7",
+  "_id": "ljshell@1.1.8",
   "_inBundle": false,
-  "_integrity": "sha1-g1J/oeT7HnP2WUb3gO3CbiAwyGE=",
+  "_integrity": "sha1-CvAUyUE2riu02FEFwpmL3Z+p0C4=",
   "_location": "/ljshell",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "ljshell@^1.1.5",
+    "raw": "ljshell@^1.1.7",
     "name": "ljshell",
     "escapedName": "ljshell",
-    "rawSpec": "^1.1.5",
+    "rawSpec": "^1.1.7",
     "saveSpec": null,
-    "fetchSpec": "^1.1.5"
+    "fetchSpec": "^1.1.7"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npm.taobao.org/ljshell/download/ljshell-1.1.7.tgz",
-  "_shasum": "83527fa1e4fb1e73f65946f780edc26e2030c861",
-  "_spec": "ljshell@^1.1.5",
+  "_resolved": "https://registry.npm.taobao.org/ljshell/download/ljshell-1.1.8.tgz",
+  "_shasum": "0af014c94136ae2bb4d85105c2998bdd9fa9d02e",
+  "_spec": "ljshell@^1.1.7",
   "_where": "/root/workspace",
   "author": {
     "name": "xfun.com@hotmail.com"
@@ -64,5 +64,5 @@
     "prepublishOnly": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.1.7"
+  "version": "1.1.8"
 }

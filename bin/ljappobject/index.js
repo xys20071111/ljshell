@@ -307,6 +307,9 @@ var ljAppObject = {
   },
   copyFromClipboard: function copyFromClipboard(callback) {
     (0, _index.callNative)('theAppObject', 'copyFromClipboard', {}, callback);
+  },
+  addWatchProgress: function addWatchProgress(resname, progress, watchCnt, forceUpdate, curSecond, callback) {
+    (0, _index.callNative)('theAppObject', 'addWatchProgress', { resname: resname, progress: progress, watchCnt: watchCnt, forceUpdate: forceUpdate, curSecond: curSecond }, callback);
   }
 };
 exports.ljAppObject = ljAppObject;

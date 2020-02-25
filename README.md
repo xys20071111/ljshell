@@ -611,6 +611,21 @@ class TestComponent extends React.Component {
             text
         }
 
+#### addWatchProgress: function(resname,progress,watchCnt,forceUpdate,curSecond,callback)
+    增加新的视频观看记录
+    参数：
+        resname:string,                 视频的唯一MD5名称，如果这个视频只有连接，没有MD5名称，那么一般使用m3u8文件名，不要包含路径
+        progress:string,                按10秒一次记录的字符串，每位标志一个十秒的观看
+        watchCnt:int                    是否新增观看次数，一般只是第一次调用的时候为1，播放过程中调用一律为0
+        forceUpdate:boolean             调用时是否需要马上上传数据，一般退出视频播放时需要置1
+        curSecond:int                   调用时当前的播放位置，下次可以通过接口获取后从当前位置播放，精确到秒
+
+        函数返回：
+        {
+            code:int,           //=0 成功   !=0 失败
+            msg:string,         //提示消息
+        }
+
 # ljUserInfo
          ljshell用户信息对象
          
