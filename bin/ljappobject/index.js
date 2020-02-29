@@ -310,6 +310,9 @@ var ljAppObject = {
   },
   addWatchProgress: function addWatchProgress(resname, progress, watchCnt, forceUpdate, curSecond, callback) {
     (0, _index.callNative)('theAppObject', 'addWatchProgress', { resname: resname, progress: progress, watchCnt: watchCnt, forceUpdate: forceUpdate, curSecond: curSecond }, callback);
+  },
+  addWatchProgress2: function addWatchProgress2(resname, progress, watchCnt, forceUpdate, curSecond, userID, callback) {
+    (0, _index.callNative)('theAppObject', 'addWatchProgress', { resname: resname, progress: progress, watchCnt: watchCnt, forceUpdate: forceUpdate, curSecond: curSecond, userID: userID }, callback);
   }
 };
 exports.ljAppObject = ljAppObject;
